@@ -7,14 +7,17 @@ function Pizza(toppings, size) {
 
 Pizza.prototype.addPrice = function() {
     let currentPrice = 0;
-    if (this.size === "large") {
-    currentPrice += 15;
-    } else if (this.size === "medium"){
-        currentPrice += 12;
-    } else if (this.size === "small"){
-        currentPrice += 8;
-    } 
-    return currentPrice;
+    let toppingTotal = 0;
+    for (let i = 0; i < this.toppings.length; i += 1) {
+        toppingTotal += 2;
+    } if (this.size === "large") {
+        this.currentOrder = currentPrice += 15;
+        } else if (this.size === "medium"){
+        this.currentOrder = currentPrice += 12;
+        } else if (this.size === "small"){
+            this.currentOrder = currentPrice += 8;
+        } 
+        return this.currentOrder;
 }
 
 Pizza.prototype.calculateToppings = function() {
@@ -24,6 +27,8 @@ Pizza.prototype.calculateToppings = function() {
     }
     return toppingTotal;
 }
+
+
 
 
 

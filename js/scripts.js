@@ -9,6 +9,10 @@ Pizza.prototype.addPrice = function() {
     let currentPrice = 0;
     if (this.size === "large") {
     currentPrice += 15;
+    } else if (this.size === "medium"){
+        currentPrice += 12;
+    } else if (this.size === "small"){
+        currentPrice += 8;
     } 
     return currentPrice;
 }

@@ -17,6 +17,13 @@ Pizza.prototype.addPrice = function() {
     return currentPrice;
 }
 
+Pizza.prototype.calculateToppings = function() {
+    let toppingTotal = 0;
+    for (let i = 0; i < this.toppings.length; i += 1) {
+        toppingTotal += 2;
+    }
+    return toppingTotal;
+}
 
 
 

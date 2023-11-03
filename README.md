@@ -6,8 +6,8 @@ Expected Output:Pizza(toppings:["mushroom", "peperoni"], "large");
 
 Describe: Pizza.addPrice();
 Test:"It should give add price to currentOrder by size"
-Code: let price = pizza.addPrice();
-Expected Output: 16;
+Code:testPizza.addPrice();
+Expected Output: 15;
 
 Test:
 Code:

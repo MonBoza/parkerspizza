@@ -10,29 +10,31 @@
 <body>
     <h1>Parker's Pizza</h1>
     <h3>Welcome to Parkers Pizzeria!</h3>
-    <form class="size-form">
-        <p>Which size would you like?</p>
-        <select name="pizza-size">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-        </select>
-    </form>
-    <form class="toppings">
-        <p><strong>Select your toppings</strong></p>
-        <h5>* 1st topping is free! All extra toppings are $2.</h5>
-        <input type="checkbox" name="topping" value="peppers"/> Green peppers
-        <br />
-        <input type="checkbox" name="topping" value="peppers"/> Green peppers
-        <br />
-        <input type="checkbox" name="topping" value="peppers"/> Green peppers
-        <br />
-        <input type="checkbox" name="topping" value="peppers"/> Green peppers
-        <br />
-        <input type="checkbox" name="topping" value="peppers"/> Green peppers
-        <br />
-        <input type="checkbox" name="topping" value="peppers"/> Green peppers
-    </form>
+    <div class="pizza-selection">
+        <form class="size-form">
+            <p>Which size would you like?</p>
+            <select name="pizza-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </form>
+        <form class="toppings-form">
+            <p><strong>Select your toppings</strong></p>
+            <h5>* 1st topping is free! All extra toppings are $2.</h5>
+            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+            <br />
+            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+            <br />
+            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+            <br />
+            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+            <br />
+            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+            <br />
+            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+        </form>
+    </div>
     <button type="submit" >Place Your Order</button>
     <div id="order" class="hidden" >
         <p>Your order:</p>

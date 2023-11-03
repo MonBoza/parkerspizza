@@ -22,10 +22,15 @@ Pizza.prototype.addPrice = function() {
 
 
 // UI Logic
+function handlePizzaOrder(currentOrder) {
+   
+    form.document.getElementById("size-form");
+    document.getElementById("toppings-form");
+}
 
 window.addEventListener("load", function () {
-    document. document.querySelector("form#")
-})
+   document.querySelector("button.submit").addEventListener("submit", handlePizzaOrder)
+});
 
 
 

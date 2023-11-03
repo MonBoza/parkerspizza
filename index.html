@@ -11,7 +11,7 @@
     <h1>Parker's Pizza</h1>
     <h3>Welcome to Parkers Pizzeria!</h3>
     <div class="pizza-selection">
-        <form class="size-form">
+        <form id="size-form">
             <p>Which size would you like?</p>
             <select name="pizza-size">
                 <option value="small">Small</option>
@@ -19,10 +19,10 @@
                 <option value="large">Large</option>
             </select>
         </form>
-        <form class="toppings-form">
+        <form id="toppings-form">
             <p><strong>Select your toppings</strong></p>
             <h5>* 1st topping is free! All extra toppings are $2.</h5>
-            <input type="checkbox" name="topping" value="peppers"/> Green peppers
+            <input type="checkbox" name="topping" value="peppers" selected="selected"/> Green peppers
             <br />
             <input type="checkbox" name="topping" value="peppers"/> Green peppers
             <br />
@@ -36,10 +36,9 @@
         </form>
     </div>
     <button type="submit" >Place Your Order</button>
-    <div id="order" class="hidden" >
+    <div id="order" >
         <p>Your order:</p>
-        <p id="result"></p>
-        <p id="order-total">
+        <p id="order-total"></p>
     </div>
     
 </body>

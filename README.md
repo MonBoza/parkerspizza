@@ -15,3 +15,8 @@ Code:let testPizza2 = new Pizza(["pepperoni", "mushrooms"], "small");
 testPizza2.addPrice()
 Expected Output: 8
 
+Describe: Pizza.calculateToppings();
+
+Test: "It will calculate price of selected toppings"
+Code: testPizza.calculateToppings();
+Expected Output: 4

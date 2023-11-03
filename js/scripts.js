@@ -21,7 +21,11 @@ Pizza.prototype.addPrice = function() {
 
 
 
+// UI Logic
 
+window.addEventListener("load", function () {
+    document. document.querySelector("form#")
+})
 
 
 

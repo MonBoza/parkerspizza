@@ -7,15 +7,16 @@ function Pizza(toppings, size) {
 
 Pizza.prototype.addPrice = function() {
     let currentPrice = 0;
-    for (let i = 1; i < this.toppings.length; i += 1) {
-        this.currentOrder = currentPrice += 2;
+    for (let i = 0; i < this.toppings.length; i += 1) {
+            currentPrice += 2;
     } if (this.size === "large") {
-        this.currentOrder = currentPrice += 15;
+            currentPrice += 15;
         } else if (this.size === "medium"){
-        this.currentOrder = currentPrice += 12;
+            currentPrice += 12;
         } else if (this.size === "small"){
-            this.currentOrder = currentPrice += 8;
+            currentPrice += 8;
         } 
+        this.currentOrder = currentPrice;
         return this.currentOrder ;
 }
 
@@ -25,16 +26,13 @@ Pizza.prototype.addPrice = function() {
 function handlePizzaOrder(event) {
     event.preventDefault();
     const sizeSelected = document.querySelector("select[name='pizza-size']").value;
-    const toppingsSelected = document.querySelectorAll("input[name='topping'] :checked");
+    const toppingsSelected = document.querySelectorAll("input[name='topping']:checked");
     let toppingsArray = Array.from(toppingsSelected).map(topping => topping.value);
-    let newOrder = new Pizza(sizeSelected, toppingsArray);
-    Pizza.addPrice(newOrder);
-
-    const orderTotal = document.getElementById("p");
-    orderTotal.textContent = " $" + newOrder.currentOrder;
-    document.getElementById("order").append(orderTotal);
-    
+    let newOrder = new Pizza(toppingsArray, sizeSelected);
+    const orderTotal = newOrder.addPrice();
+    const result = document.getElementById("result");
+    result.textContent = "$" + orderTotal;
 }
-window.addEventListener("load", function (){
+window.addEventListener("load", function () {
     document.querySelector("form#toppings-form").addEventListener("submit", handlePizzaOrder);
 });

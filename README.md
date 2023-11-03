@@ -5,14 +5,13 @@ Code:const testPizza = new Pizza(["mushroom","peperoni"], "large");
 Expected Output:Pizza(toppings:["mushroom", "peperoni"], "large");
 
 Describe: Pizza.addPrice();
-Test:"It should give add price to currentOrder by size"
+
+Test:"It should give add price to currentOrder by size "large""
 Code:testPizza.addPrice();
-Expected Output: 15;
+Expected Output: 15
 
-Test:
-Code:
-Expected Output:
+Test:"It should add base price for "small" and medium"
+Code:let testPizza2 = new Pizza(["pepperoni", "mushrooms"], "small");
+testPizza2.addPrice()
+Expected Output: 8
 
-Test:
-Code:
-Expected Output:

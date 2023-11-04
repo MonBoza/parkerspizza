@@ -11,10 +11,11 @@
 * CSS
 
 ## Description
-I named the app Parker's pizza after my stepson who is an honorary ninja Turtle.
+I named the app Parker's pizza after my stepson who eats more pizza than anyone I know.
 This Application will allow user to select the size of pizza they would like to order and add toppings. It will then calculate the price of selected items and present the total. 
+* I set it up for Small pizza's base price to be $8, Medium is $12, Large is $15. All the toppings are $2 each so each choice will increase the price of the currentOrder.  
 * If the user selects a Large pizza with peppers and onions the result total should return 
-* your total order total is $19
+* your total order total is $19.
 
  * Try it out at http://monboza.github.io/parkerspizza/
 

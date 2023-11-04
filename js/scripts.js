@@ -1,3 +1,8 @@
+function PizzaOrder() {
+    this.orders = {};
+}
+PizzaOrder.prototype.addOrder = function(order) {
+}
 //Business logic for Pizza();
 function Pizza(toppings, size) {
     this.toppings = toppings;
@@ -23,6 +28,11 @@ Pizza.prototype.addPrice = function () {
 
 
 // UI Logic
+function listPizzaorder(pizzaOrderToDisplay) {
+    let pizzaDiv = document.querySelector("div#pizza-selection")
+    pizzaDiv.innerText + null;
+}   const ul = document.createElement("ul");
+    Object.keys(pizzaOrderToDisplay.)
 function handlePizzaOrder(event) {
     event.preventDefault();
     const sizeSelected = document.querySelector("select[name='pizza-size']").value;

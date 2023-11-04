@@ -70,8 +70,14 @@ Code:let testPizza2 = new Pizza(["pepperoni", "mushrooms"], "small");
 testPizza2.addPrice()
 Expected Output: 8
 
-Test: "It will calculate price of selected toppings and add toppings to currentOrder"
+Test:"It will calculate price of selected toppings and add toppings to currentOrder"
 Code: let testPizza2 = new Pizza(["pepperoni", "mushrooms"], "small");
 testPizza2.currentOrder();
 Expected Output: 12
+
+Describe: PizzaOrder();
+
+Test:"It create an empty Object to store pizza Orders"
+Code: PizzaOrder();
+      orders[]
 

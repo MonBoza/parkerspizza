@@ -1,9 +1,3 @@
-function PizzaOrder() {
-    this.orders = {};
-}
-PizzaOrder.prototype.addOrder = function(orders) {
-    this.orders = this.currentOrder;
-}
 //Business logic for Pizza();
 function Pizza(toppings, size) {
     this.toppings = toppings;
@@ -29,11 +23,6 @@ Pizza.prototype.addPrice = function () {
 
 
 // UI Logic
-function listPizzaorder(pizzaOrderToDisplay) {
-    let pizzaDiv = document.querySelector("div#pizza-selection")
-    pizzaDiv.innerText + null;
-}   const ul = document.createElement("ul");
-    Object.keys(pizzaOrderToDisplay.)
 function handlePizzaOrder(event) {
     event.preventDefault();
     const sizeSelected = document.querySelector("select[name='pizza-size']").value;
@@ -42,7 +31,7 @@ function handlePizzaOrder(event) {
     let newOrder = new Pizza(toppingsArray, sizeSelected);
     const orderTotal = newOrder.addPrice();
     const result = document.getElementById("result");
-    result.textContent = "$ " + orderTotal;
+    result.textContent = "$ " + orderTotal.toFixed(2);
 }
 window.addEventListener("load", function () {
     document.querySelector("form#toppings-form").addEventListener("submit", handlePizzaOrder);

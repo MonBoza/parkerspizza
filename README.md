@@ -45,6 +45,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 
 Email: (mailto:MonBoza@gmail.com)
+
+
 Copyright (c) November 3, 2023  Monica Barboza
 
 
@@ -74,16 +76,5 @@ Test:"It will calculate price of selected toppings and add toppings to currentOr
 Code: let testPizza2 = new Pizza(["pepperoni", "mushrooms"], "small");
 testPizza2.currentOrder();
 Expected Output: 12
-
-Describe: PizzaOrder();
-
-Test:"It create an empty Object to store pizza Orders"
-Code: PizzaOrder();
-Expected Output:    orders[]
-
-Test:"It will add all pizza orders to PizzaOrder"
-Code: PizzaOrder.addOrders()
-Expected Output: PizzaOrder;
-                  {testPizza1, testPizza2}
 
 

@@ -1,3 +1,17 @@
-.hidden {
-    display: none;
+body {
+    text-align: center;
+}
+hr {
+    border: 5px solid;
+}
+img {
+    width: 200px;
+}
+
+form {
+    text-align: center;
+    border-radius: 100px;
+    border: 20px solid rgb(27, 82, 16);
+    border-style: double;
+    padding: 30px;
 }

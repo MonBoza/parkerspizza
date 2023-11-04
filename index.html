@@ -12,7 +12,7 @@
     <h3>Welcome to Parkers Place</h3>
     <div class="pizza-selection">
         <form id="size-form">
-            <p>Which size would you like?</p>
+            <p><strong>Which size would you like?</strong></p>
             <select name="pizza-size">
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -21,7 +21,7 @@
         </form>
         <form id="toppings-form">
             <p><strong>Select your toppings</strong></p>
-            <h5>*All toppings are $2.</h5>
+            <h4>*All toppings are $2 extra.</h4>
             <input type="checkbox" name="topping" value="pepperoni" selected="selected"/> pepperoni
             <br />
             <input type="checkbox" name="topping" value="mushrooms"/> mushrooms
@@ -35,13 +35,17 @@
             <input type="checkbox" name="topping" value="pineapple"/> pineapple
             <br />
             <input type="checkbox" name="topping" value="extra-cheese"/> extra cheese
+            <br />
+            <br />
             <button type="submit" >Place Your Order</button>
         </form>
     </div>
+    <hr>
   
     <div id="order" >
         <p>Your order total is:</p>
         <p id="result"></p>
+        <img src="https://www.fye.com/dw/image/v2/BBNF_PRD/on/demandware.static/-/Sites-fye-master/default/dwd6ac6fb3/1e1/1e1d50/1e1d50f2-d5eb-4700-bee4-0cb5700bf086.jpeg?sw=1000" alt="ninja turtle pizza box">
     </div>
     
 </body>

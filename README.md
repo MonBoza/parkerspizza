@@ -79,5 +79,11 @@ Describe: PizzaOrder();
 
 Test:"It create an empty Object to store pizza Orders"
 Code: PizzaOrder();
-      orders[]
+Expected Output:    orders[]
+
+Test:"It will add all pizza orders to PizzaOrder"
+Code: PizzaOrder.addOrders()
+Expected Output: PizzaOrder;
+                  {testPizza1, testPizza2}
+
 

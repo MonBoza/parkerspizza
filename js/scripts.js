@@ -1,7 +1,8 @@
 function PizzaOrder() {
     this.orders = {};
 }
-PizzaOrder.prototype.addOrder = function(order) {
+PizzaOrder.prototype.addOrder = function(orders) {
+    this.orders = this.currentOrder;
 }
 //Business logic for Pizza();
 function Pizza(toppings, size) {

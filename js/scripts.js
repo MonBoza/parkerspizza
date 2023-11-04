@@ -5,7 +5,7 @@ function Pizza(toppings, size) {
     this.currentOrder = 0;
 }
 
-Pizza.prototype.addPrice = function() {
+Pizza.prototype.addPrice = function () {
     let currentPrice = 0;
     for (let i = 0; i < this.toppings.length; i += 1) {
             currentPrice += 2;
@@ -31,7 +31,7 @@ function handlePizzaOrder(event) {
     let newOrder = new Pizza(toppingsArray, sizeSelected);
     const orderTotal = newOrder.addPrice();
     const result = document.getElementById("result");
-    result.textContent = "$" + orderTotal;
+    result.textContent = "$ " + orderTotal;
 }
 window.addEventListener("load", function () {
     document.querySelector("form#toppings-form").addEventListener("submit", handlePizzaOrder);

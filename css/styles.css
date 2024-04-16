@@ -65,3 +65,18 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(46, 127, 174);
+    color: white;
+    text-align: center;
+}
+a {
+    color: rgb(166, 36, 236);
+    font-weight: bold;
+   
+}

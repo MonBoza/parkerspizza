@@ -28,10 +28,11 @@ This Application will allow user to select the size of pizza they would like to 
 * Navigate to the to the bottom of the directory.
 * Open the index.html file.
 
+
 ## Known Bugs
 
 *** Having issues getting the DOM to recognize large pizza price.
-**
+*  Updated *I had a syntax error querySelect and not selector.
 
 ## License
 
